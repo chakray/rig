@@ -136,6 +136,41 @@
           }
         }
       }
+    },
+    "@chakray/fbc": {
+      "root": "projects/chakray/fbc",
+      "sourceRoot": "projects/chakray/fbc/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/chakray/fbc/tsconfig.lib.json",
+            "project": "projects/chakray/fbc/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/chakray/fbc/src/test.ts",
+            "tsConfig": "projects/chakray/fbc/tsconfig.spec.json",
+            "karmaConfig": "projects/chakray/fbc/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/chakray/fbc/tsconfig.lib.json",
+              "projects/chakray/fbc/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "rig"

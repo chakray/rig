@@ -15,6 +15,7 @@ options:
 files:
   include:
     - 'src/**/*.s+(a|c)ss'
+    - 'projects/**/*.s+(a|c)ss'
   ignore:
     - 'src/external/**/*.*'
     - 'src/styles/**/*.*'

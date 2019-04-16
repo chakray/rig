@@ -7,6 +7,7 @@ install:
 script:
   - npm run lint
   - npx ng test --watch=false
+  - npx ng build @chakray/fbc
   - BUILD=`date +%s`; sed -ie "s/BUILD/$BUILD/g" ./src/environments/environment.prod.ts
   - npx ng build --prod --deploy-url /rig/ --base-href /rig/
   - cp src/404.html dist/rig

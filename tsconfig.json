@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@chakray/fbc": [
+        "dist/chakray/fbc"
+      ],
+      "@chakray/fbc/*": [
+        "dist/chakray/fbc/*"
+      ]
+    }
   }
 }
