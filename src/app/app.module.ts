@@ -1,23 +1,26 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, APP_INITIALIZER } from '@angular/core';
 
-import { AppComponent } from './app.component';
 import { FbcModule, ClientMod, fwApps, fwCore } from '@chakray/fbc';
 import { fblib, apps } from './firebase.plug';
 
+import { SideMod } from '@mod/side';
+import { AppRouting } from './app.routing';
+import { AppRoot } from './app.root';
+
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppRoot],
   imports: [
-    ClientMod.forRoot([
-      { provide: fwCore, useFactory: fblib },
-      { provide: fwApps, useValue: apps },
-    ]),
+    BrowserModule,
+    ClientMod,
+    AppRouting,
     FbcModule,
-    BrowserModule
+    SideMod,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    { provide: fwCore, useFactory: fblib },
+    { provide: fwApps, useValue: apps },
+  ],
+  bootstrap: [AppRoot]
 })
 export class AppModule { }

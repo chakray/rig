@@ -2,16 +2,10 @@
   "extends": "../tslint.json",
   "rules": {
     "component-class-suffix": [true, "Root", "Tag"],
-    "directive-selector": [
-      true,
-      "attribute",
-      "app",
-      "camelCase"
-    ],
     "component-selector": [
       true,
       "element",
-      "app",
+      ["s"],
       "kebab-case"
     ]
   }
