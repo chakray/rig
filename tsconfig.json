@@ -19,6 +19,9 @@
       "dom"
     ],
     "paths": {
+      "@mod/*": [
+        "src/*"
+      ],
       "@chakray/fbc": [
         "dist/chakray/fbc"
       ],
