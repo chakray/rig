@@ -1,7 +1,7 @@
 {
   "theme": "markdown",
   "_mode": "modules",
-  "json": "docs/json",
+  "_json": "docs/json",
   "mode": "file",
   "exclude": "**/*+(public-api|test|index|.spec|.e2e).ts",
   "excludePrivate": true,

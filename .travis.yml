@@ -12,6 +12,8 @@ script:
   - BUILD=`date +%s`; sed -ie "s/BUILD/$BUILD/g" ./src/environments/environment.prod.ts
   - npx ng build --prod --deploy-url /rig/ --base-href /rig/
   - cp src/404.html dist/rig
+  - npx typedoc projects/chakray/fbc/src
+  - mv docs dist/rig
 cache:
     directories:
       - node_modules
