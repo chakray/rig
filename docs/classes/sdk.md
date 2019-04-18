@@ -28,7 +28,7 @@
 
 **● SDK_VERSION**: *`string`*
 
-*Defined in [wrap/sdk.ts:7](https://github.com/chakray/rig/blob/c07d678/projects/chakray/fbc/src/wrap/sdk.ts#L7)*
+*Defined in [wrap/sdk.ts:7](https://github.com/chakray/rig/blob/c8db6db/projects/chakray/fbc/src/wrap/sdk.ts#L7)*
 
 ___
 <a id="user"></a>
@@ -37,7 +37,7 @@ ___
 
 **● User**: *`fb.User`*
 
-*Defined in [wrap/sdk.ts:9](https://github.com/chakray/rig/blob/c07d678/projects/chakray/fbc/src/wrap/sdk.ts#L9)*
+*Defined in [wrap/sdk.ts:9](https://github.com/chakray/rig/blob/c8db6db/projects/chakray/fbc/src/wrap/sdk.ts#L9)*
 
 ___
 <a id="apps"></a>
@@ -46,7 +46,7 @@ ___
 
 **● apps**: *`fb.app.App`[]* =  []
 
-*Defined in [wrap/sdk.ts:8](https://github.com/chakray/rig/blob/c07d678/projects/chakray/fbc/src/wrap/sdk.ts#L8)*
+*Defined in [wrap/sdk.ts:8](https://github.com/chakray/rig/blob/c8db6db/projects/chakray/fbc/src/wrap/sdk.ts#L8)*
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 ▸ **initializeApp**(cfg: *`Option`*, name?: *`string`*): `fb.app.App`
 
-*Defined in [wrap/sdk.ts:10](https://github.com/chakray/rig/blob/c07d678/projects/chakray/fbc/src/wrap/sdk.ts#L10)*
+*Defined in [wrap/sdk.ts:10](https://github.com/chakray/rig/blob/c8db6db/projects/chakray/fbc/src/wrap/sdk.ts#L10)*
 
 **Parameters:**
 

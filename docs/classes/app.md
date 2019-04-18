@@ -23,7 +23,7 @@
 
 **● name**: *`string`* = "null"
 
-*Defined in [wrap/sdk.ts:14](https://github.com/chakray/rig/blob/c07d678/projects/chakray/fbc/src/wrap/sdk.ts#L14)*
+*Defined in [wrap/sdk.ts:14](https://github.com/chakray/rig/blob/c8db6db/projects/chakray/fbc/src/wrap/sdk.ts#L14)*
 
 ___
 <a id="options"></a>
@@ -32,7 +32,7 @@ ___
 
 **● options**: *`Option`*
 
-*Defined in [wrap/sdk.ts:13](https://github.com/chakray/rig/blob/c07d678/projects/chakray/fbc/src/wrap/sdk.ts#L13)*
+*Defined in [wrap/sdk.ts:13](https://github.com/chakray/rig/blob/c8db6db/projects/chakray/fbc/src/wrap/sdk.ts#L13)*
 
 ___
 
