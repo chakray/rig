@@ -9,6 +9,9 @@ function debugAppInfo(sdk: Sdk) {
   });
 }
 
+/**
+ * @ignore
+ */
 export function fwinit() {
   this.apps.forEach(({ options, name }) => {
     this.addApp(name, options);
@@ -18,10 +21,16 @@ export function fwinit() {
   }
 }
 
-export function init(ld) {
+/**
+ * @ignore
+ */
+export function init(ld: Loader) {
   return fwinit.bind(ld);
 }
 
+/**
+ * this module helps referer to initialize loader during app init
+ */
 @NgModule({
   providers: [
     { provide: APP_INITIALIZER, useFactory: init, deps: [Loader], multi: true },
