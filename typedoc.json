@@ -1,0 +1,16 @@
+{
+  "theme": "markdown",
+  "_mode": "modules",
+  "json": "docs/json",
+  "mode": "file",
+  "exclude": "**/*+(public-api|test|index|.spec|.e2e).ts",
+  "excludePrivate": true,
+  "excludeNotExported": true,
+  "excludeExternals": true,
+  "excludeProtected": true,
+  "hideGenerator": true,
+  "includeDeclarations": true,
+  "listInvalidSymbolLinks": true,
+  "toc": true,
+  "out": "docs"
+}
