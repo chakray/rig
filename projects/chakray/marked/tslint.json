@@ -1,6 +1,7 @@
 {
   "extends": "../../../tslint.json",
   "rules": {
+    "variable-name": [true, "ban-keywords", "check-format", "allow-leading-underscore", "allow-pascal-case"],
     "component-class-suffix": [true, "Tag"],
     "directive-selector": [
       true, "attribute", "lib", "camelCase"

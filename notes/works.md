@@ -1,4 +1,6 @@
-- view md files
+- [x] view md files
+  > better styling
+    >> code highlighting
 - structured lib files
 - docs from lib src
   > typedoc
