@@ -1,4 +1,17 @@
 \:host
   display: block
-  h1
+  a
+    display: inline-block
+    box-sizing: border-box
     padding: 0 var(--gap-s)
+    width: 100%
+    color: var(--c-fg)
+    text-decoration: none
+  .item
+    a
+      padding: var(--gap-xs) var(--gap-s)
+      &.on
+        color: var(--c-fg-hl)
+        background: var(--c-bg-on)
+      &:hover
+        background: var(--c-bg-hover)

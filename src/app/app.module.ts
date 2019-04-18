@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, APP_INITIALIZER } from '@angular/core';
 
-import { FbcModule, ClientMod, fwApps, fwCore } from '@chakray/fbc';
+import { ClientMod, fwApps, fwCore } from '@chakray/fbc';
 import { fblib, apps } from './firebase.plug';
 
 import { SideMod } from '@mod/side';
@@ -14,7 +14,6 @@ import { AppRoot } from './app.root';
     BrowserModule,
     ClientMod,
     AppRouting,
-    FbcModule,
     SideMod,
   ],
   providers: [
