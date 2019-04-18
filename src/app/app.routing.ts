@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import * as marked from 'marked';
 import { CmMarkedMod, MarkedLib, mdLib } from '@chakray/marked';
-import { AppLanderTag, AppSampleTag, AppDocTag } from './views';
+import { AppLanderTag, AppSampleTag, AppDocTag, AppDocDetailTag } from './views';
 
 export function mdFac() {
   return new MarkedLib(marked);
@@ -16,15 +16,24 @@ const routes: Routes = [{
   path: 'sample',
   component: AppSampleTag
 }, {
-  path: 'doc',
-  component: AppDocTag
+  path: 'docs',
+  component: AppDocTag,
+  children: [{
+    path: ':seg',
+    component: AppDocDetailTag,
+  }, {
+    path: '',
+    pathMatch: 'full',
+    redirectTo: '/docs/'
+  }]
 }];
 
 @NgModule({
   declarations: [
     AppLanderTag,
     AppSampleTag,
-    AppDocTag
+    AppDocTag,
+    AppDocDetailTag
   ],
   imports: [
     CmMarkedMod,

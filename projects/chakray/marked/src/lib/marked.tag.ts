@@ -18,7 +18,8 @@ export class CmMarkedTag {
    */
   @Input() set str(v) {
     this._str = v;
-    this.html = this.sanitizer.bypassSecurityTrustHtml(this.lib.parse(v));
+    const r = this.lib.parse(v);
+    this.html = this.sanitizer.bypassSecurityTrustHtml(r);
   }
   @HostBinding('innerHtml') html: SafeHtml;
   private _str = '';
