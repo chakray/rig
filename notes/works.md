@@ -1,8 +1,7 @@
 - [x] view md files
   > better styling
     >> code highlighting
-- structured lib files
-- docs from lib src
+- [ ] docs from lib src
   > typedoc
     > md
     > locale
@@ -10,3 +9,4 @@
   > github release
     >> git tags
       >>> travis ci deploy
+- structured lib files
