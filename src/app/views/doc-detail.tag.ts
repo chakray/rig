@@ -15,7 +15,7 @@ export class AppDocDetailTag {
       seg = seg.replace(/-/gi, r => '/');
       const file = 'docs/' + (seg || 'README.md');
       this.load(file);
-    })
+    });
   }
 
   private load(file) {

@@ -21,7 +21,8 @@ export class CmMarkedTag {
     const r = this.lib.parse(v);
     this.html = this.sanitizer.bypassSecurityTrustHtml(r);
   }
-  @HostBinding('innerHtml') html: SafeHtml;
+  // @HostBinding('innerHtml')
+  html: SafeHtml;
   private _str = '';
   /**
    * @param sanitizer see external DomSanitizer

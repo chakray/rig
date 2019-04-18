@@ -3,8 +3,9 @@
   "rules": {
     "variable-name": [true, "ban-keywords", "check-format", "allow-leading-underscore", "allow-pascal-case"],
     "component-class-suffix": [true, "Tag"],
+    "directive-class-suffix": [true, "Attr"],
     "directive-selector": [
-      true, "attribute", "lib", "camelCase"
+      true, "attribute", "cm", "camelCase"
     ],
     "component-selector": [
       true, "element", ["cm"], "kebab-case"

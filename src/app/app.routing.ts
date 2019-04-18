@@ -37,7 +37,10 @@ const routes: Routes = [{
   ],
   imports: [
     CmMarkedMod,
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot(routes, {
+      scrollPositionRestoration: 'enabled',
+      anchorScrolling: 'enabled',
+    }),
   ],
   providers: [
     { provide: mdLib, useFactory: mdFac }
