@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'chk-fbc',
+  selector: 'cf-fbc',
   templateUrl: './fbc.component.html',
   styleUrls: ['./fbc.component.sass']
 })

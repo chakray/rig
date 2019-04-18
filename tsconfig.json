@@ -27,6 +27,12 @@
       ],
       "@chakray/fbc/*": [
         "dist/chakray/fbc/*"
+      ],
+      "@chakray/marked": [
+        "dist/chakray/marked"
+      ],
+      "@chakray/marked/*": [
+        "dist/chakray/marked/*"
       ]
     }
   }

@@ -5,7 +5,7 @@
     "component-selector": [
       true,
       "element",
-      ["chk"],
+      ["cf"],
       "kebab-case"
     ]
   }
