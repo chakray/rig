@@ -13,6 +13,7 @@ import { MdLib } from '../model';
   styleUrls: ['./marked.tag.sass']
 })
 export class CmMarkedTag {
+  @Input() baseUrl = '';
   /**
    * str for set markdown string
    */

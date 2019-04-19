@@ -19,7 +19,7 @@ const routes: Routes = [{
   path: 'docs',
   component: AppDocTag,
   children: [{
-    path: ':seg',
+    path: '**',
     component: AppDocDetailTag,
   }, {
     path: '',

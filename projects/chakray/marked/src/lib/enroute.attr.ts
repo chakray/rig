@@ -1,10 +1,11 @@
-import { Directive, ElementRef, HostListener } from '@angular/core';
+import { Input, Directive, ElementRef, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Directive({
   selector: '[cmEnroute]'
 })
 export class CmEnrouteAttr {
+  @Input('cmEnroute') baseUrl = '';
   constructor(private el: ElementRef, private router: Router) { }
   @HostListener('click', ['$event'])
   public onClick(event) {
@@ -13,14 +14,24 @@ export class CmEnrouteAttr {
     let href = m[0];
     const fragment = m[1];
     if (href.startsWith('http')) { return; }
-    if (!href.includes('/')) {
-      href = '/docs/classes-' + href;
-    }
-    if (href.includes('../')) {
-      href = href.replace('..', 'docs');
+    if (href.includes('..')) {
+      let meg = href.split('/');
+      const n = meg.reduce((r, k) => {
+        return k === '..' ? r + 1 : r;
+      }, 0)
+      let seg = this.baseUrl.split('/');
+      seg = seg.slice(0, seg.length - n);
+      meg.splice(0, n);
+      href = seg.join('/') + '/' + meg.join('/');
+    } else {
+      href = this.baseUrl + '/' + href;
     }
     if (event.target.tagName === 'A') {
-      this.router.navigate([href], { fragment });
+      if (href) {
+        this.router.navigate([href], { fragment });
+      } else {
+        this.router.navigate([], { fragment });
+      }
       event.preventDefault();
     } else {
       return;
