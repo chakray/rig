@@ -61,7 +61,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
   providedIn: 'root', factory: appFactory
 })
 
-*Defined in [wrap/loader.ts:25](https://github.com/chakray/rig/blob/c8db6db/projects/chakray/fbc/src/wrap/loader.ts#L25)*
+*Defined in [wrap/loader.ts:25](https://github.com/chakray/rig/blob/950865a/projects/chakray/fbc/src/wrap/loader.ts#L25)*
 
 token for apps config
 
@@ -74,7 +74,7 @@ ___
   providedIn: 'root', factory: coreFactory
 })
 
-*Defined in [wrap/loader.ts:31](https://github.com/chakray/rig/blob/c8db6db/projects/chakray/fbc/src/wrap/loader.ts#L31)*
+*Defined in [wrap/loader.ts:31](https://github.com/chakray/rig/blob/950865a/projects/chakray/fbc/src/wrap/loader.ts#L31)*
 
 token for library injection
 
