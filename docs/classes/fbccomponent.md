@@ -30,7 +30,7 @@
 
 ⊕ **new FbcComponent**(): [FbcComponent](fbccomponent.md)
 
-*Defined in [lib/fbc.component.ts:8](https://github.com/chakray/rig/blob/950865a/projects/chakray/fbc/src/lib/fbc.component.ts#L8)*
+*Defined in [lib/fbc.component.ts:8](https://github.com/chakray/rig/blob/e57f403/projects/chakray/fbc/src/lib/fbc.component.ts#L8)*
 
 **Returns:** [FbcComponent](fbccomponent.md)
 
@@ -44,7 +44,7 @@ ___
 
 ▸ **ngOnInit**(): `void`
 
-*Defined in [lib/fbc.component.ts:12](https://github.com/chakray/rig/blob/950865a/projects/chakray/fbc/src/lib/fbc.component.ts#L12)*
+*Defined in [lib/fbc.component.ts:12](https://github.com/chakray/rig/blob/e57f403/projects/chakray/fbc/src/lib/fbc.component.ts#L12)*
 
 **Returns:** `void`
 
