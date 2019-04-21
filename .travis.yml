@@ -23,4 +23,10 @@ deploy:
     github-token: $github
     skip-cleanup: true
     keep-history: true
-
+  - provider: releases
+    api_key: $github
+    file: "index.html"
+    skip_cleanup: true
+    draft: true
+    on:
+      tags: true
