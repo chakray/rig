@@ -15,10 +15,10 @@ export class CmEnrouteAttr {
     const fragment = m[1];
     if (href.startsWith('http')) { return; }
     if (href.includes('..')) {
-      let meg = href.split('/');
+      const meg = href.split('/');
       const n = meg.reduce((r, k) => {
         return k === '..' ? r + 1 : r;
-      }, 0)
+      }, 0);
       let seg = this.baseUrl.split('/');
       seg = seg.slice(0, seg.length - n);
       meg.splice(0, n);

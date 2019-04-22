@@ -33,6 +33,12 @@
       ],
       "@chakray/marked/*": [
         "dist/chakray/marked/*"
+      ],
+      "@chakray/gate": [
+        "dist/chakray/gate"
+      ],
+      "@chakray/gate/*": [
+        "dist/chakray/gate/*"
       ]
     }
   }

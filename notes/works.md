@@ -1,12 +1,5 @@
-- [x] view md files
-  > better styling
-    >> code highlighting
-- [x] docs from lib src
-  > typedoc
-    > md
-    > locale
-- [ ] load versions from github
-  > github release
-    >> git tags
-      >>> travis ci deploy
-- structured lib files
+- [ ] versioned docs
+  > travis before_deploy
+    >> check TRAVIS_TAG -> npm publish
+    >> update tags.json
+  > UI loads tags.json

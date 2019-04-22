@@ -8,6 +8,7 @@ script:
   - npm run lint
   - npx ng build @chakray/fbc
   - npx ng build @chakray/marked
+  - npx ng build @chakray/gate
   - npx ng test --watch=false
   - BUILD=`date +%s`; sed -ie "s/BUILD/$BUILD/g" ./src/environments/environment.prod.ts
   - npx ng build --prod --deploy-url /rig/ --base-href /rig/
@@ -17,6 +18,8 @@ script:
 cache:
     directories:
       - node_modules
+comment_before_deploy:
+  - tar czf lib.tgz --transform 's/dist\/chakray\/fbc//g' dist/chakray/fbc
 deploy:
   - provider: pages
     local-dir: dist/rig
@@ -25,7 +28,7 @@ deploy:
     keep-history: true
   - provider: releases
     api_key: $github
-    file: "index.html"
+    file: 'lib.tgz'
     skip_cleanup: true
     draft: true
     on:

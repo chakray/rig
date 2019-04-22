@@ -1,0 +1,12 @@
+{
+  "extends": "../tslint.json",
+  "rules": {
+    "variable-name": [true, "ban-keywords", "check-format", "allow-leading-underscore", "allow-pascal-case"],
+    "directive-selector": [
+      true, "attribute", "cs", "camelCase"
+    ],
+    "component-selector": [
+      true, "element", ["cs"], "kebab-case"
+    ]
+  }
+}

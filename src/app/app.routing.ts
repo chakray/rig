@@ -14,7 +14,8 @@ const routes: Routes = [{
   component: AppLanderTag
 }, {
   path: 'sample',
-  component: AppSampleTag
+  component: AppSampleTag,
+  loadChildren: '@mod/sample#AllMod'
 }, {
   path: 'docs',
   component: AppDocTag,
