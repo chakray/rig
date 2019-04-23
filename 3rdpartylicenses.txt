@@ -37,6 +37,8 @@ MIT
 
 @chakray/fbc
 
+@chakray/gate
+
 @chakray/marked
 
 @firebase/app

@@ -22,7 +22,7 @@
 
 ⊕ **new FbcService**(): [FbcService](fbcservice.md)
 
-*Defined in [lib/fbc.service.ts:6](https://github.com/chakray/rig/blob/e57f403/projects/chakray/fbc/src/lib/fbc.service.ts#L6)*
+*Defined in [lib/fbc.service.ts:6](https://github.com/chakray/rig/blob/ea0dd17/projects/chakray/fbc/src/lib/fbc.service.ts#L6)*
 
 **Returns:** [FbcService](fbcservice.md)
 
