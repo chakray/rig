@@ -5,7 +5,17 @@ import { AllTag } from './all.tag';
 
 const routes: Routes = [{
   path: '',
-  component: AllTag
+  component: AllTag,
+  children: [{
+    path: 'signup',
+    loadChildren: '@mod/sample/signup#CsSignupMod'
+  }, {
+    path: 'signin',
+    loadChildren: '@mod/sample/signin#CsSigninMod'
+  }, {
+    path: 'signout',
+    loadChildren: '@mod/sample/signout#CsSignoutMod'
+  }]
 }];
 
 @NgModule({

@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'cs-all',
-  template: './all.tag.html'
+  templateUrl: './all.tag.html',
+  styleUrls: ['./all.tag.sass']
 })
 export class AllTag {
 

@@ -6,7 +6,7 @@
       true, "attribute", "cs", "camelCase"
     ],
     "component-selector": [
-      true, "element", ["cs"], "kebab-case"
+      true, "element", ["cs", "css"], "kebab-case"
     ]
   }
 }
