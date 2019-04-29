@@ -38,7 +38,7 @@ library loader
 
 ⊕ **new Loader**(_apps: *[App](app.md)[]*, _core: *[Sdk](sdk.md)*): [Loader](loader.md)
 
-*Defined in [wrap/loader.ts:55](https://github.com/chakray/rig/blob/ea0dd17/projects/chakray/fbc/src/wrap/loader.ts#L55)*
+*Defined in [wrap/loader.ts:55](https://github.com/chakray/rig/blob/a35c6f7/projects/chakray/fbc/src/wrap/loader.ts#L55)*
 
 **Parameters:**
 
@@ -59,7 +59,7 @@ ___
 
 **● debug**: *`boolean`* = false
 
-*Defined in [wrap/loader.ts:43](https://github.com/chakray/rig/blob/ea0dd17/projects/chakray/fbc/src/wrap/loader.ts#L43)*
+*Defined in [wrap/loader.ts:43](https://github.com/chakray/rig/blob/a35c6f7/projects/chakray/fbc/src/wrap/loader.ts#L43)*
 
 set to true to enable debug mode
 
@@ -73,7 +73,7 @@ ___
 
 **get apps**(): [App](app.md)[]
 
-*Defined in [wrap/loader.ts:53](https://github.com/chakray/rig/blob/ea0dd17/projects/chakray/fbc/src/wrap/loader.ts#L53)*
+*Defined in [wrap/loader.ts:53](https://github.com/chakray/rig/blob/a35c6f7/projects/chakray/fbc/src/wrap/loader.ts#L53)*
 
 **Returns:** [App](app.md)[]
 apps config
@@ -85,7 +85,7 @@ ___
 
 **get core**(): [Sdk](sdk.md)
 
-*Defined in [wrap/loader.ts:47](https://github.com/chakray/rig/blob/ea0dd17/projects/chakray/fbc/src/wrap/loader.ts#L47)*
+*Defined in [wrap/loader.ts:47](https://github.com/chakray/rig/blob/a35c6f7/projects/chakray/fbc/src/wrap/loader.ts#L47)*
 
 **Returns:** [Sdk](sdk.md)
 library instance
@@ -100,7 +100,7 @@ ___
 
 ▸ **addApp**(name: *`any`*, cfg: *`any`*): `void`
 
-*Defined in [wrap/loader.ts:68](https://github.com/chakray/rig/blob/ea0dd17/projects/chakray/fbc/src/wrap/loader.ts#L68)*
+*Defined in [wrap/loader.ts:68](https://github.com/chakray/rig/blob/a35c6f7/projects/chakray/fbc/src/wrap/loader.ts#L68)*
 
 *__remark__*: add single app at runtime
 
@@ -120,7 +120,7 @@ ___
 
 ▸ **getApp**(name?: *`string`*): `App`
 
-*Defined in [wrap/loader.ts:76](https://github.com/chakray/rig/blob/ea0dd17/projects/chakray/fbc/src/wrap/loader.ts#L76)*
+*Defined in [wrap/loader.ts:76](https://github.com/chakray/rig/blob/a35c6f7/projects/chakray/fbc/src/wrap/loader.ts#L76)*
 
 *__remark__*: get library app information by its name
 
