@@ -1,2 +1,21 @@
-Sign up
-<lib-gate></lib-gate>
+<h2> no TOS provided </h2>
+<cg-gate [providers]='pds[0]' [content]='msgNoTos'
+    (event)='gateEvent($event)'></cg-gate>
+
+<h2> with TOS provided </h2>
+<cg-gate [providers]='pds[1]' [content]='msg'
+    (event)='gateEvent($event)'></cg-gate>
+
+<h2> providers {{ pds[2] }} </h2>
+<cg-gate [providers]='pds[2]' [content]='msgPv'
+    (event)='gateEvent($event)'></cg-gate>
+
+<h2> providers {{ pds[3] }} </h2>
+<cg-gate [providers]='pds[3]' [content]='msgPv'
+    (event)='gateEvent($event)'></cg-gate>
+
+<h2> providers {{ pds[4] }} </h2>
+<cg-gate [providers]='pds[4]' [content]='msgPv'
+    (event)='gateEvent($event)'></cg-gate>
+
+    <p></p>

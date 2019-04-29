@@ -1,0 +1,23 @@
+<div *ngIf='content.tos'>
+  {{ content.tos.text }}
+  <label for='read'>
+    <input id='read' type='checkbox' (input)='readTos($event)' />
+    {{ content.tos.confirm }}
+  </label>
+</div>
+<!-- TODO recapcha -->
+<div>
+  <div *ngIf='id'>
+    {{ content.proceed.text }} {{ id }}.
+    <button (click)='wrongId()'> {{ content.proceed.confirm }} </button>
+  </div>
+  <cg-locker *ngIf='use === "email"' (event)='lockerEvt("email", $event)'
+    [hints]='content.email' pattern='email'></cg-locker>
+  <cg-locker *ngIf='use === "phone"' (event)='lockerEvt("phone", $event)'
+    [hints]='content.phone' pattern='phone'></cg-locker>
+</div>
+<ng-container *ngIf='!id'>
+  <ng-container *ngFor='let p of providers'>
+    <button *ngIf='use !== p' (click)='enter(p)'> {{ content[p].name }} </button>
+  </ng-container>
+</ng-container>
