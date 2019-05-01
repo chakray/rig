@@ -36,7 +36,7 @@ wrapper for firebase.Auth
 
 ⊕ **new Auth**(auth: *`fb.auth.Auth`*): [Auth](auth.md)
 
-*Defined in [wrap/auth.ts:16](https://github.com/chakray/rig/blob/a35c6f7/projects/chakray/fbc/src/wrap/auth.ts#L16)*
+*Defined in [wrap/auth.ts:16](https://github.com/chakray/rig/blob/f9d02f0/projects/chakray/fbc/src/wrap/auth.ts#L16)*
 
 **Parameters:**
 
@@ -56,7 +56,7 @@ ___
 
 **● state**: *`Observable`<`fb.User` \| `null`>*
 
-*Defined in [wrap/auth.ts:15](https://github.com/chakray/rig/blob/a35c6f7/projects/chakray/fbc/src/wrap/auth.ts#L15)*
+*Defined in [wrap/auth.ts:15](https://github.com/chakray/rig/blob/f9d02f0/projects/chakray/fbc/src/wrap/auth.ts#L15)*
 
 ___
 <a id="token"></a>
@@ -65,7 +65,7 @@ ___
 
 **● token**: *`Observable`<`fb.User` \| `null`>*
 
-*Defined in [wrap/auth.ts:16](https://github.com/chakray/rig/blob/a35c6f7/projects/chakray/fbc/src/wrap/auth.ts#L16)*
+*Defined in [wrap/auth.ts:16](https://github.com/chakray/rig/blob/f9d02f0/projects/chakray/fbc/src/wrap/auth.ts#L16)*
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 ▸ **check**(email: *`string`*): `Observable`<`any`>
 
-*Defined in [wrap/auth.ts:25](https://github.com/chakray/rig/blob/a35c6f7/projects/chakray/fbc/src/wrap/auth.ts#L25)*
+*Defined in [wrap/auth.ts:25](https://github.com/chakray/rig/blob/f9d02f0/projects/chakray/fbc/src/wrap/auth.ts#L25)*
 
 **Parameters:**
 
@@ -95,7 +95,7 @@ ___
 
 ▸ **create**(__namedParameters: *`object`*): `Observable`<`object`>
 
-*Defined in [wrap/auth.ts:34](https://github.com/chakray/rig/blob/a35c6f7/projects/chakray/fbc/src/wrap/auth.ts#L34)*
+*Defined in [wrap/auth.ts:34](https://github.com/chakray/rig/blob/f9d02f0/projects/chakray/fbc/src/wrap/auth.ts#L34)*
 
 *__remark__*: create new auth
 
@@ -115,7 +115,7 @@ ___
 
 ▸ **destroy**(): `Observable`<`void`>
 
-*Defined in [wrap/auth.ts:54](https://github.com/chakray/rig/blob/a35c6f7/projects/chakray/fbc/src/wrap/auth.ts#L54)*
+*Defined in [wrap/auth.ts:54](https://github.com/chakray/rig/blob/f9d02f0/projects/chakray/fbc/src/wrap/auth.ts#L54)*
 
 *__remark__*: destroy client auth
 
@@ -129,7 +129,7 @@ ___
 
 ▸ **restore**(__namedParameters?: *`object`*): `Observable`<`any`>
 
-*Defined in [wrap/auth.ts:43](https://github.com/chakray/rig/blob/a35c6f7/projects/chakray/fbc/src/wrap/auth.ts#L43)*
+*Defined in [wrap/auth.ts:43](https://github.com/chakray/rig/blob/f9d02f0/projects/chakray/fbc/src/wrap/auth.ts#L43)*
 
 *__remark__*: restore auth status by given input
 
