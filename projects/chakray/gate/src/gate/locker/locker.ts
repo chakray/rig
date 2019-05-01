@@ -2,6 +2,6 @@ export class Locker {
   hint = 'text';
   hintPass = 'passcode';
   check = 'check';
-  resend = 'resend';
+  resend = 'forget password';
   enter = 'enter';
 }

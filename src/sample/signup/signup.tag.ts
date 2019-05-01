@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+import { Gateway } from './gateway';
 import { GateEventHandler } from './gate.event-handler';
 
 @Component({
@@ -37,8 +38,11 @@ export class CssSignupTag {
     'google,email,github'.split(','),
     'notExist,email,github'.split(','),
   ];
-  gateEh = new GateEventHandler();
+  geh: GateEventHandler;
+  constructor(private gw: Gateway) {
+    this.geh = new GateEventHandler(gw);
+  }
   gateEvent(e) {
-    this.gateEh.handle(e);
+    this.geh.handle(e);
   }
 }

@@ -76,7 +76,6 @@ export class CgGateTag {
     this.error = '';
   }
   private emit(action, data?) {
-    // console.log(action, data);
     this.event.emit({ action, data });
   }
 }
