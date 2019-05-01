@@ -1,11 +1,12 @@
-Locker
 <div *ngIf='step === 1'>
-  <input [type]='pattern' [placeholder]='hint' (input)='idEvt($event)'/>
-  <button (click)='doCheck()'> {{ check }} </button>
+  <input #id [type]='pattern' (keydown)='keyDown($event, "doCheck")'
+    required='' [placeholder]='hint' (input)='idEvt($event)'/>
+  <button (click)='doCheck(id)'> {{ check }} </button>
 </div>
 
 <div *ngIf='step === 2'>
   <button (click)='doResend()'> {{ resend }} </button>
-  <input [type]='passMode' [placeholder]='hintPass' (input)='passEvt($event)'/>
-  <button (click)='doEnter()'> {{ enter }} </button>
+  <input #pass (keydown)='keyDown($event, "doEnter")'
+    [type]='passMode' required='' [placeholder]='hintPass' (input)='passEvt($event)'/>
+  <button (click)='doEnter(pass)'> {{ enter }} </button>
 </div>

@@ -15,6 +15,7 @@
     [hints]='content.email' pattern='email'></cg-locker>
   <cg-locker *ngIf='use === "phone"' (event)='lockerEvt("phone", $event)'
     [hints]='content.phone' pattern='phone'></cg-locker>
+  <span [class.on]='error' class='error'> {{ error }} </span>
 </div>
 <ng-container *ngIf='!id'>
   <ng-container *ngFor='let p of providers'>

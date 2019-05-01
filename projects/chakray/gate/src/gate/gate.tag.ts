@@ -19,13 +19,16 @@ export class CgGateTag {
   @Input() set providers(v) {
     v = v.filter(k => k in this.content);
     this._providers = v;
-    this.use = v[0] || 'email';
+    if (['phone', 'email'].includes(v[0])) {
+      this.use = v[0];
+    }
   }
   get providers() {
     return this._providers;
   }
   @Output() event = new EventEmitter();
   _providers: string[] = [];
+  error = '';
   use: string;
   id: string;
   lastLocker;
@@ -38,30 +41,39 @@ export class CgGateTag {
     this.content.tos.read = e.target.checked;
   }
   enter(p) {
-    if (this.notAgree) {
-      console.error('please agree tos before continue', p);
-      this.emit('notAgree');
+    const k = 'notAgree';
+    if (this[k]) {
+      this.error = this.content.tos[k];
+      this.emit(k);
       return;
     }
-    console.log('enter', p, this.content.tos.read);
     this.use = p;
-    this.emit('enter', { use: p });
+    this.emit('enter', { use: p, tag: this });
   }
   wrongId() {
-    this.id = null;
+    this.reset(null);
     if (this.lastLocker) {
       this.lastLocker.back();
     }
   }
   lockerEvt(key, { action: a, data: d }) {
-    a = 'locker.' + a;
-    if (a === 'locker.check') {
-      this.id = d.id;
+    if (a === 'check') {
+      this.reset(d.id);
     }
-    if (d.src) {
-      this.lastLocker = d.src;
+    if (a === 'error') {
+      this.error = d.msg;
     }
-    this.emit(a, { key, ...d });
+    if (a === 'enter') {
+      this.enter(key);
+    }
+    if (d.tag) {
+      this.lastLocker = d.tag;
+    }
+    this.emit('locker.' + a, { key, ...d });
+  }
+  private reset(id) {
+    this.id = id;
+    this.error = '';
   }
   private emit(action, data?) {
     console.log(action, data);

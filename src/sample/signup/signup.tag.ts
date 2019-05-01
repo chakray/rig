@@ -10,6 +10,9 @@ export class CssSignupTag {
   msg = {
     tos: {
       text: 'Please agree these terms and service'
+    },
+    phone: {
+      hint: 'tel'
     }
   };
   msgPv = {
