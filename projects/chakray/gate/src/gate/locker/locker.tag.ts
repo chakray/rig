@@ -42,8 +42,9 @@ export class CgLockerTag extends Locker {
     super();
   }
   keyDown(e, action) {
+    if (!['doEnter', 'doCheck'].includes(action)) { return; }
     const { key: k = '' } = e;
-    if (k.toLowerCase() === 'enter') {
+    if ((k + '').toLowerCase() === 'enter') {
       this[action](e.target);
     }
   }
@@ -62,11 +63,8 @@ export class CgLockerTag extends Locker {
     if (!this.valid(tag)) { return; }
     this.emit('enter', this.params);
   }
-  idEvt(e) {
-    this.update('id', e);
-  }
-  passEvt(e) {
-    this.update('pass', e);
+  update(k, e) {
+    this[k] = e.target.value;
   }
   private valid(tag) {
     const cv = tag.checkValidity();
@@ -74,9 +72,6 @@ export class CgLockerTag extends Locker {
       this.emit('error', { id: this.id, tag: this, msg: tag.validationMessage });
     }
     return cv;
-  }
-  private update(k, e) {
-    this[k] = e.target.value;
   }
   private emit(action, data?) {
     this.event.emit({ action, data });
