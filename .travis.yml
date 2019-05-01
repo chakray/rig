@@ -10,7 +10,7 @@ script:
   - npx ng build @chakray/fbc
   - npx ng build @chakray/marked
   - npx ng build @chakray/gate
-  - npx ng test --watch=false
+  - npx ng test --watch=false --code-coverage
   - BUILD=`date +%s`; sed -ie "s/BUILD/$BUILD/g" ./src/environments/environment.prod.ts
   - npx ng build --prod --deploy-url /rig/ --base-href /rig/
   - cp src/404.html dist/rig
