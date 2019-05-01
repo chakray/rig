@@ -1,14 +1,8 @@
 - [ ] gate.mod
   > cg-gate
-    [x] basics
-    [x] error event
-    [x] error display
-    [x] pattern check
-    [x] keyboard bindings
-    [ ] unittest
     [ ] templating
-    [ ] complete tel pattern
     [ ] accessibility
+    [ ] complete tel pattern
     [ ] styling
     [ ] theming
 - [ ] versioned docs
