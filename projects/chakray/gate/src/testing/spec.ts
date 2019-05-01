@@ -1,26 +1,6 @@
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { TestBed, fakeAsync } from '@angular/core/testing';
-
-class Ref {
-  tag: any;
-  fixture: any;
-  // [key: string]: any;
-  hasSame(key, obj) {
-    expect(this.tag[key]).toEqual(obj[key]);
-  }
-  fn(k, fn) {
-    describe(`.${k}`, () => {
-      fn(() => this.tag[k].bind(this.tag));
-    });
-  }
-  prop(k, fn) {
-    describe(`.${k}`, () => {
-      fn(() => this.tag[k]);
-    });
-  }
-  equal(v, cmp) {
-    expect(v()).toEqual(cmp);
-  }
-}
+import { Ref } from './ref';
 
 export class Spec {
   static outline(K, fn) {
@@ -28,6 +8,7 @@ export class Spec {
     describe(K.name, () => {
       beforeEach(fakeAsync(() => {
         TestBed.configureTestingModule({
+          schemas: [NO_ERRORS_SCHEMA],
           declarations: [K],
         }).compileComponents();
         ref.fixture = TestBed.createComponent(K);

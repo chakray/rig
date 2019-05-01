@@ -1,4 +1,4 @@
-import { Spec } from './spec';
+import { Spec } from '../../testing';
 
 import { Locker } from './locker';
 import { CgLockerTag as Tag } from './locker.tag';
