@@ -2,7 +2,7 @@
   "theme": "markdown",
   "_mode": "modules",
   "_json": "docs/json",
-  "entryPoint": "wooo",
+  "_entryPoint": "wooo",
   "mode": "file",
   "exclude": "**/*+(public-api|test|index|.spec|.e2e).ts",
   "excludePrivate": true,
