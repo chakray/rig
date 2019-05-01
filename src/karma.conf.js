@@ -18,10 +18,10 @@ module.exports = function (config) {
     },
     coverageIstanbulReporter: {
       dir: require('path').join(__dirname, '../coverage/rig'),
-      reports: ['json', 'lcovonly', 'text-summary'],
+      reports: ['html', 'lcovonly', 'text-summary'],
       fixWebpackSourcePaths: true
     },
-    reporters: ['progress', 'kjhtml'],
+    reporters: ['dots'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
